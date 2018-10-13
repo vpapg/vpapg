@@ -16,5 +16,5 @@ I have [solved some of the programming exercises](https://github.com/vpapg/NLTK_
 
 Let the journey begin!
 
-
+Note:
 _[This](https://getavataaars.com) is where I made my avatar._
