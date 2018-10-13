@@ -15,3 +15,6 @@ I have [solved some of the programming exercises](https://github.com/vpapg/NLTK_
 3. [Peter Norvig's webpage](http://norvig.com/): Norvig is one of the authors of one of the most famous [books](http://aima.cs.berkeley.edu/) about Artificial Intelligence. In his website there are some useful guides and code in Python and other languages. And, of course, NLP-related material.
 
 Let the journey begin!
+
+
+_[This](https://getavataaars.com) is where I made my avatar._
