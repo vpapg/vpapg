@@ -36,8 +36,9 @@
 
 <div class="container" style="margin-top:30px">
   <h2>Edit Distance Implementation in Python 3</h2>
+  <br>
     <p class="text-justify">After taking a look at <a href="https://web.stanford.edu/class/cs124/">Jurafsky’s Stanford course “From Language to Information”</a>, I was looking at various Python implementations of the Edit Distance algorithm. Some of them were really interesting, but I didn’t like some features they had or lacked. So I wrote my own <a href="https://github.com/vpapg/python3-scripts/blob/master/EditDistance.py">implementation</a>. I definitely don’t feel it’s the best someone can find, but:</p>
-    <ol>
+    <ol style="margin-top:0">
       <li class="text-justify">It calculates the whole Edit Distance table (D).</li>
       <li class="text-justify">It saves the operations which led to the D array (backtrace).</li>
     </ol>
@@ -46,16 +47,21 @@
       Let’s go to the implementation!
       <br>
     First of all, I am talking about the Edit Distance algorithm with the Levenshtein operations. So, I am using the insertion, deletion and substitution operations between two words. Some other variants of the Edit Distance algorithm are:</p>
-    <ul>
+    <ul style="margin-top:0">
       <li class="text-justify">Longest common subsequence (insertion, deletion)</li>
       <li class="text-justify">Hamming distance (substitution, only equal-length strings)</li>
       <li class="text-justify">Jaro-Winkler distance (transposition)</li>
     </ul>
-    <p class="text-justify">Of course, dynamic programming has been used (Wagner-Fischer).
+    <p class="text-justify">Of course, dynamic programming has been used.
       <br>
-      Levenshtein (Levenshtein, 1966) initially proposed that each of the three operations has a cost of 1, and later a variation which doesn’t allow substitutions. According to (JURAFSKY BOOK), in this case, the substitution operation can be kept, but with a cost of 2, since it is the result of the other two operations, each of which has a cost of 1. In my implementation, the user can decide whether the substitution penalty will be equal to 1 (default) or something else.
+      Levenshtein (Levenshtein, 1966) initially proposed that each of the three operations has a cost of 1, and later a variation which doesn’t allow substitutions. According to (Jurafsky and Martin, 2018, p.21), in this case, the substitution operation can be kept, but with a cost of 2, since it is the result of the other two operations, each of which has a cost of 1. In my implementation, the user can decide whether the substitution penalty will be equal to 1 (default) or something else.
       <br>
       In the lecture notes of the course, a confusion matrix for spelling errors was given, which isn’t included in the book. According to this matrix, some letters substitution shouldn’t always have the same cost, but it depends on the compared characters. I am planning to add this in my implementation later.</p>
+
+    <br>
+    <br>
+    <p><i>Levenshtein, V. I. (1966). Binary codes capable of correcting deletions, insertions, and reversals. Cybernetics and Control Theory, 10 (8), 707–710. Original in Doklady Akademii Nauk SSSR 163(4): 845–848 (1965).</i></p>
+    <p><i>Jurafsky, D. A., and Martin, J. H. (2018). Speech and Language Processing. Unpublished.</i></p>
 </div>
 </body>
 </html>
