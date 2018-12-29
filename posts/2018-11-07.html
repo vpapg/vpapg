@@ -51,7 +51,7 @@
       <li class="text-justify">Jaro-Winkler distance (transposition)</li>
     </ul>
     <p class="text-justify">Of course, dynamic programming has been used.</p>
-    <p> Levenshtein (Levenshtein, 1966) initially proposed that each of the three operations has a cost of 1, and later a variation which doesn’t allow substitutions. According to (Jurafsky and Martin, 2018, p.21), in this case, the substitution operation can be kept, but with a cost of 2, since it is the result of the other two operations, each of which has a cost of 1. In my implementation, the user can decide whether the substitution penalty will be equal to 1 (default) or something else.</p>
+    <p> Levenshtein (Levenshtein, 1966) initially proposed that each of the three operations has a cost of 1, and later a variation which doesn’t allow substitutions. In this case, the substitution operation can be kept, but with a cost of 2, since it is the result of the other two operations, each of which has a cost of 1. In my implementation, the user can decide whether the substitution penalty will be equal to 1 (default) or something else.</p>
     <p>In the lecture notes of the course, a confusion matrix for spelling errors was given, which isn’t included in the book. According to this matrix, some letters substitution shouldn’t always have the same cost, but it depends on the compared characters. I am planning to add this in my implementation later.</p>
 
     <br>
